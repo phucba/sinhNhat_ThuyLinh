@@ -150,11 +150,11 @@ canvas#fireworks {
   z-index: 99;
 }
 @media (max-width: 600px) {
-  #typewriter {
-    font-size: 1.16em;
-    min-width: 0;
-    padding: 19px 10px 18px 10px;
+  .cake { width: 115px; height: 115px; }
+
+  .plate, .layer, .icing, .candle {
+    transform: scale(0.52);
+    transform-origin: top center;
   }
-  .cake { width: 115px; height: 115px;}
-  .plate, .layer, .icing, .candle { transform: scale(0.52);}
 }
+
