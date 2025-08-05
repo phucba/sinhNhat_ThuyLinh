@@ -134,37 +134,6 @@ wishBtn.addEventListener('click', function() {
     );
   }
 });
-<script>
-function createHeart(x, y) {
-  const heart = document.createElement('div');
-  heart.className = 'heart';
-  heart.style.left = x + 'px';
-  heart.style.top = y + 'px';
-  document.body.appendChild(heart);
-  setTimeout(() => heart.remove(), 1300);
-}
-
-window.onload = function() {
-  const chil = document.getElementById('chil');
-  const rect = chil.getBoundingClientRect();
-  // Vị trí trái tim rơi gần chữ chil (trên đầu chữ chil)
-  for (let i = 0; i < 4; i++) {
-    setTimeout(() => {
-      const x = rect.left + (rect.width / 5) * (i + 1);
-      const y = rect.top - 50;
-      createHeart(x, y);
-    }, i * 400);
-  }
-  // Đợi trái tim rơi xong mới chạy chữ
-  setTimeout(() => {
-    // Chạy hiệu ứng chữ, ví dụ fade in hoặc animation bạn đang dùng
-    chil.style.transition = "opacity 1s";
-    chil.style.opacity = 1;
-  }, 1800);
-  // Nếu chữ chil mặc định hiển thị thì ẩn tạm lúc đầu
-  chil.style.opacity = 0;
-};
-</script>
 
 // Click canvas để nổ pháo hoa bất kỳ chỗ nào
 canvas.addEventListener('click', (e) => {
