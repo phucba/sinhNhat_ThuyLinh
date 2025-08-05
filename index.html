@@ -6,57 +6,22 @@
   <title>Chúc mừng sinh nhật 21-08-1999!</title>
   <link rel="stylesheet" href="style_Version4.css" />
   <style>
-.heart {
-  position: absolute;
-  width: 32px;
-  height: 32px;
-  background: url('https://cdn-icons-png.flaticon.com/512/833/833472.png') no-repeat center/contain;
-  pointer-events: none;
-  z-index: 2000;
-  animation: dropHeart 1.2s linear forwards;
-}
-@keyframes dropHeart {
-  0% { opacity: 1; transform: translateY(0);}
-  90% { opacity: 1;}
-  100% { opacity: 0; transform: translateY(200px);}
-}
-</style>
-
+    .heart {
+      position: absolute;
+      width: 32px;
+      height: 32px;
+      background: url('https://cdn-icons-png.flaticon.com/512/833/833472.png') no-repeat center/contain;
+      pointer-events: none;
+      z-index: 2000;
+      animation: dropHeart 1.2s linear forwards;
+    }
+    @keyframes dropHeart {
+      0% { opacity: 1; transform: translateY(0);}
+      90% { opacity: 1;}
+      100% { opacity: 0; transform: translateY(200px);}
+    }
+  </style>
 </head>
-  <script>
-function createHeart(x, y) {
-  const heart = document.createElement('div');
-  heart.className = 'heart';
-  heart.style.left = x + 'px';
-  heart.style.top = y + 'px';
-  document.body.appendChild(heart);
-  setTimeout(() => heart.remove(), 1300);
-}
-
-window.onload = function() {
-  // Xác định vị trí gần khu vực chữ chạy (typewriter)
-  const typewriter = document.getElementById('typewriter-container');
-  const rect = typewriter.getBoundingClientRect();
-  const hearts = 4;
-  // Rơi 3-5 trái tim ở các vị trí khác nhau gần khu vực chữ chạy
-  for (let i = 0; i < hearts; i++) {
-    setTimeout(() => {
-      const x = rect.left + window.scrollX + rect.width/5 * (i+1);
-      const y = rect.top + window.scrollY - 40;
-      createHeart(x, y);
-    }, i * 350);
-  }
-  // Ẩn chữ chạy lúc đầu
-  document.getElementById('typewriter-container').style.opacity = 0;
-  // Sau khi trái tim rơi xong mới hiện chữ chạy
-  setTimeout(() => {
-    document.getElementById('typewriter-container').style.transition = 'opacity 0.8s';
-    document.getElementById('typewriter-container').style.opacity = 1;
-    // Khởi động hiệu ứng chạy chữ nếu có hàm khởi động bên file script_Version6.js
-    if (typeof startTypewriter === 'function') startTypewriter();
-  }, hearts * 350 + 900);
-};
-</script>
 <body>
   <div id="typewriter-container">
     <div id="typewriter"></div>
@@ -76,6 +41,40 @@ window.onload = function() {
     <div id="wish-result"></div>
   </div>
   <canvas id="fireworks"></canvas>
+  <script>
+    // Hiệu ứng trái tim rơi
+    function createHeart(x, y) {
+      const heart = document.createElement('div');
+      heart.className = 'heart';
+      heart.style.left = x + 'px';
+      heart.style.top = y + 'px';
+      document.body.appendChild(heart);
+      setTimeout(() => heart.remove(), 1300);
+    }
+
+    window.onload = function() {
+      const typewriter = document.getElementById('typewriter-container');
+      const rect = typewriter.getBoundingClientRect();
+      const hearts = 4;
+      // Ẩn chữ chạy lúc đầu
+      typewriter.style.opacity = 0;
+      // Rơi trái tim gần chữ chạy
+      for (let i = 0; i < hearts; i++) {
+        setTimeout(() => {
+          const x = rect.left + window.scrollX + rect.width/5 * (i+1);
+          const y = rect.top + window.scrollY - 40;
+          createHeart(x, y);
+        }, i * 350);
+      }
+      // Sau khi trái tim rơi xong mới hiện chữ chạy
+      setTimeout(() => {
+        typewriter.style.transition = 'opacity 0.8s';
+        typewriter.style.opacity = 1;
+        // Khởi động hiệu ứng chạy chữ nếu có hàm khởi động trong script_Version6.js
+        if (typeof startTypewriter === 'function') startTypewriter();
+      }, hearts * 350 + 900);
+    };
+  </script>
   <script src="script_Version6.js"></script>
 </body>
 </html>
