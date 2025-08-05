@@ -43,40 +43,7 @@
     <div id="wish-result"></div>
   </div>
   <canvas id="fireworks"></canvas>
-  <script>
-    // Hiệu ứng trái tim rơi
-    function createHeart(x, y) {
-      const heart = document.createElement('div');
-      heart.className = 'heart';
-      heart.style.left = x + 'px';
-      heart.style.top = y + 'px';
-      document.body.appendChild(heart);
-      setTimeout(() => heart.remove(), 1300);
-    }
-
-    window.onload = function() {
-      const typewriter = document.getElementById('typewriter-container');
-      const rect = typewriter.getBoundingClientRect();
-      const hearts = 4;
-      // Ẩn chữ chạy lúc đầu
-      typewriter.style.opacity = 0;
-      // Rơi trái tim gần chữ chạy
-      for (let i = 0; i < hearts; i++) {
-        setTimeout(() => {
-          const x = rect.left + window.scrollX + rect.width/5 * (i+1);
-          const y = rect.top + window.scrollY - 40;
-          createHeart(x, y);
-        }, i * 350);
-      }
-      // Sau khi trái tim rơi xong mới hiện chữ chạy
-      setTimeout(() => {
-        typewriter.style.transition = 'opacity 0.8s';
-        typewriter.style.opacity = 1;
-        // Khởi động hiệu ứng chạy chữ nếu có hàm khởi động trong script_Version6.js
-        if (typeof startTypewriter === 'function') startTypewriter();
-      }, hearts * 350 + 900);
-    };
-  </script>
+ 
   <script src="script_Version6.js"></script>
 </body>
 </html>
