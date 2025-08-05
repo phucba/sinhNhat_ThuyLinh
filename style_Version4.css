@@ -29,7 +29,7 @@ body {
 }
 #cake-container {
   display: flex;
-  flex-direction: center;
+  flex-direction: colume;
   align-items: center;
   justify-content: center;
   min-height: 100vh;
