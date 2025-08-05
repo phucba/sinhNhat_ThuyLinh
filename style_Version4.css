@@ -158,3 +158,18 @@ canvas#fireworks {
   .cake { width: 115px; height: 115px;}
   .plate, .layer, .icing, .candle { transform: scale(0.52);}
 }
+
+.heart {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  background: url('https://cdn-icons-png.flaticon.com/512/833/833472.png') no-repeat center/contain;
+  pointer-events: none;
+  z-index: 1000;
+  animation: drop 1.2s linear forwards;
+}
+@keyframes drop {
+  0% { top: 0; opacity: 1; }
+  90% { opacity: 1; }
+  100% { top: 200px; opacity: 0; }
+}
