@@ -1,3 +1,39 @@
+url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  font-family: 'Pacifico', cursive, sans-serif;
+  background: linear-gradient(120deg, #f7cac9 0%, #fbeee6 100%);
+  overflow-x: hidden;
+}
+#typewriter-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+#typewriter {
+  font-size: 2em;
+  color: #ad1457;
+  background: rgba(255,255,255,0.88);
+  border-radius: 1.5em;
+  padding: 2.2em 2.5em 2em 2.5em;
+  box-shadow: 0 8px 40px 0 rgba(214, 65, 101, 0.22);
+  min-width: 400px;
+  min-height: 120px;
+  text-shadow: 1px 1px 6px #fff3, 0 0 10px #f8bbd0bb;
+}
+.hidden {
+  display: none !important;
+}
+#cake-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
 .cake {
   position: relative;
   width: 220px;
