@@ -149,7 +149,7 @@ canvas#fireworks {
   pointer-events: none;
   z-index: 99;
 }
-@media (max-width: 600px) {
+@media (max-width: 400px) {
   .cake { width: 115px; height: 115px; }
 
   .plate, .layer, .icing, .candle {
