@@ -124,7 +124,8 @@ wishBtn.addEventListener('click', function() {
   if (!candleLit) return;
   candleLit = false;
   flame.style.display = "none";
-  wishResult.innerHTML = "Chúc mừng sinh nhật! 🎉";
+  wishResult.innerHTML = "Chúc mừng sinh nhật! 🎉,người bạn gái mà anh k ngờ tới nhất. Cảm ơn em đến bên anh! Chúng ta cùng cố gắng để về chung một nhà nhé! hihi";
+  wishResult.style.color = "pink"; #them màu hồng
   for (let i = 0; i < 6; i++) {
     setTimeout(() =>
       launchFirework(
