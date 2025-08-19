@@ -137,12 +137,21 @@ body {
 
 /* Responsive cho màn hình nhỏ (mobile) */
 @media (max-width: 700px) {
+   #typewriter-container {
+    display: flex;              /* dùng flexbox */
+    justify-content: center;    /* căn giữa ngang */
+    align-items: center;        /* căn giữa dọc */
+    height: 150px;              /* chiều cao khung (tùy chỉnh) */
+    padding: 0 10px;
+    text-align: center;         /* căn giữa chữ nhiều dòng */
+  }
   #typewriter {
-    font-size: 1em;   /* giảm size chữ */
+    font-size: 1.5em;   /* giảm size chữ */
     padding: 1em;     /* giảm padding */
     min-width: auto;    /* bỏ min-width cố định */
     min-height: 80px;
   }
+  
 
   #typewriter-container {
     padding: 0 10px;    /* chừa khoảng cách 2 bên */
