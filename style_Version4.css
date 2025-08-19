@@ -12,17 +12,19 @@ body {
   justify-content: center;
   align-items: center;
   height: 100vh;
+  padding: 0 10px; /* thêm chút khoảng trống cho mobile */
+  box-sizing: border-box;
 }
 #typewriter {
   font-size: 2em;
   color: #ad1457;
   background: rgba(255,255,255,0.88);
   border-radius: 1.5em;
-  padding: 2.2em 2.5em 2em 2.5em;
+  padding: 2em;
   box-shadow: 0 8px 40px 0 rgba(214, 65, 101, 0.22);
-  min-width: 400px;
-  min-height: 120px;
   text-shadow: 1px 1px 6px #fff3, 0 0 10px #f8bbd0bb;
+  max-width: 90%;   /* thay vì min-width cố định */
+  text-align: center; /* chữ canh giữa */
 }
 .hidden {
   display: none !important;
