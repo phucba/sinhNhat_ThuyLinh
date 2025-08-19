@@ -1,7 +1,7 @@
 // --- Lời chúc hiệu ứng typewriter ---
 const greetings = [
-  "Chúc mừng sinh nhật Thùy Linh!ハート ",
-  "Chúc Em tuổi mới thật nhiều niềm vui, sức khỏe.",
+  "Chúc mừng sinh nhật <3 Thùy Linh! hihi ",
+  "Chúc Linh tuổi mới thật nhiều niềm vui, sức khỏe.",
   "Tuổi mới, mong mọi điều tốt đẹp sẽ đến <3.",
   "Luôn tỏa sáng, luôn hạnh phúc!",
   "Sinh nhật vui vẻ nhé! iu Em"
@@ -126,7 +126,7 @@ wishBtn.addEventListener('click', function() {
   flame.style.display = "none";
 
   // Cập nhật nội dung và style
-  wishResult.innerHTML = "Chúc mừng sinh nhật! 🎉 Người bạn gái mà anh không ngờ tới nhất. Cảm ơn em đến bên anh!Mình cùng cố gắng để sớm về chung một nhà nhé! hihi";
+  wishResult.innerHTML = "Chúc mừng sinh nhật! 🎉 Người có thể khiến anh có thể quay 360 độ. Cảm ơn em đến bên anh!Mình cùng nhau cố gắng để sớm về chung một nhà nhé! hihi";
   wishResult.classList.add("pinkText");
 
   // Pháo hoa
