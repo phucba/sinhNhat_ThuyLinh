@@ -136,6 +136,14 @@ body {
   z-index: 10;         /* cao hơn background nhưng thấp hơn popup nếu có */
 }
 
+.pinkText {
+  color: #ff69b4 !important;
+  font-size: 28px;
+  font-weight: bold;
+  text-shadow: 2px 2px 6px #ffb6c1;
+  transition: all 0.5s;
+}
+
 /* Responsive cho màn hình nhỏ (mobile) */
 @media (max-width: 700px) {
    #typewriter-container {
