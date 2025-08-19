@@ -123,6 +123,15 @@ body {
   animation: flameFlicker 1s infinite alternate;
   box-shadow: 0 0 22px 8px #fffde7aa, 0 0 18px 2px #fff17688;
 }
+#fireworks {
+  position: fixed;     /* để nằm phủ toàn màn hình */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none; /* để click xuyên qua, không chặn nút bấm */
+  z-index: 10;         /* cao hơn background nhưng thấp hơn popup nếu có */
+}
 
 /* Responsive scale */
 @media (max-width: 400px) {
