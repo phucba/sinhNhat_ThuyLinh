@@ -133,10 +133,26 @@ body {
   z-index: 10;         /* cao hơn background nhưng thấp hơn popup nếu có */
 }
 
-/* Responsive scale */
-@media (max-width: 400px) {
-  .cake {
-    width: 150px;
-    height: 150px;
+/* Responsive cho màn hình nhỏ (mobile) */
+@media (max-width: 600px) {
+  #typewriter {
+    font-size: 1.2em;   /* giảm size chữ */
+    padding: 1.5em;     /* giảm padding */
+    min-width: auto;    /* bỏ min-width cố định */
+    min-height: 80px;
+  }
+
+  #typewriter-container {
+    padding: 0 10px;    /* chừa khoảng cách 2 bên */
+  }
+
+  #cake-container {
+    transform: scale(0.85); /* thu nhỏ bánh sinh nhật */
+  }
+
+  #wish-btn {
+    font-size: 0.9em;
+    padding: 0.6em 1.2em;
   }
 }
+
