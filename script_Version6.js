@@ -124,13 +124,22 @@ wishBtn.addEventListener('click', function() {
   if (!candleLit) return;
   candleLit = false;
   flame.style.display = "none";
-  wishResult.innerHTML = "Chúc mừng sinh nhật! 🎉,người bạn gái mà anh k ngờ tới nhất. Cảm ơn em đến bên anh! Chúng ta cùng cố gắng để về chung một nhà nhé! hihi";
+
+  // Cập nhật nội dung và style
+  wishResult.innerHTML = "Chúc mừng sinh nhật! 🎉 Người bạn gái mà anh không ngờ tới nhất. Cảm ơn em đến bên anh! Chúng ta cùng cố gắng để về chung một nhà nhé! hihi";
+  wishResult.style.color = "#ff69b4"; // hồng đậm
+  wishResult.style.fontSize = "28px"; // chữ to hơn
+  wishResult.style.fontWeight = "bold";
+  wishResult.style.textShadow = "2px 2px 6px #ffb6c1"; // bóng hồng nhẹ
+  wishResult.style.transition = "all 0.5s"; // hiệu ứng mềm mại
+
+  // Pháo hoa
   for (let i = 0; i < 6; i++) {
     setTimeout(() =>
       launchFirework(
-        window.innerWidth * (0.18 + 0.64*Math.random()),
-        window.innerHeight * (0.25 + 0.26*Math.random())
-      ), i*330
+        window.innerWidth * (0.18 + 0.64 * Math.random()),
+        window.innerHeight * (0.25 + 0.26 * Math.random())
+      ), i * 330
     );
   }
 });
