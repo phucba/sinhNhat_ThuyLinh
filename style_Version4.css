@@ -136,14 +136,14 @@ body {
 /* Responsive cho màn hình nhỏ (mobile) */
 @media (max-width: 600px) {
   #typewriter {
-    font-size: 1.2em;   /* giảm size chữ */
-    padding: 1.5em;     /* giảm padding */
+    font-size: 1em;   /* giảm size chữ */
+    padding: 1em;     /* giảm padding */
     min-width: auto;    /* bỏ min-width cố định */
     min-height: 80px;
   }
 
   #typewriter-container {
-    padding: 0 10px;    /* chừa khoảng cách 2 bên */
+    padding: 0 20px;    /* chừa khoảng cách 2 bên */
   }
 
   #cake-container {
