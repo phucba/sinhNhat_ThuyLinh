@@ -4,7 +4,7 @@ body {
   padding: 0;
   height: 100vh;
   font-family: 'Pacifico', cursive, sans-serif;
-  background: url("https://drive.google.com/file/d/1vpwl0LkgMLdvKRP0RYUc6qJX0YHyodKt/view?usp=sharing");
+  background: url("https://drive.google.com/uc?export=view&id=1vpwl0LkgMLdvKRP0RYUc6qJX0YHyodKt") no-repeat center center fixed;
   overflow-x: hidden;
 }
 #typewriter-container {
