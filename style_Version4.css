@@ -4,7 +4,7 @@ body {
   padding: 0;
   height: 100vh;
   font-family: 'Pacifico', cursive, sans-serif;
-  background: url("https://media.canva.com/v2/image-resize/format:JPG/height:550/quality:92/uri:ifs%3A%2F%2FM%2Fba2df315-97eb-48ce-a66e-2e7d6c2a69e4/watermark:F/width:550?csig=AAAAAAAAAAAAAAAAAAAAABxZj_ITdQfzhkZv8SMiNgCS_LI6Jng7ZZ0zuNhO0YvL&exp=1755597035&osig=AAAAAAAAAAAAAAAAAAAAAO0f7JS8l9H2YzG7OvF9StchXTKvHHPYB5yombubYNya&signer=media-rpc&x-canva-quality=thumbnail_large") no-repeat center center fixed;
+  background: url("IMG_2549.PNG") no-repeat center center fixed;
   overflow-x: hidden;
 }
 #typewriter-container {
