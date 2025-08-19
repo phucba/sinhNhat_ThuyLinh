@@ -1,10 +1,10 @@
 // --- Lời chúc hiệu ứng typewriter ---
 const greetings = [
-  "Chúc mừng sinh nhật bạn Linh!",
-  "Chúc bạn tuổi mới thật nhiều niềm vui, sức khỏe.",
-  "Tuổi mới 21-08-1999, mong mọi điều tốt đẹp sẽ đến.",
+  "Chúc mừng sinh nhật Thùy Linh!",
+  "Chúc Em tuổi mới thật nhiều niềm vui, sức khỏe.",
+  "Tuổi mới, mong mọi điều tốt đẹp sẽ đến <3.",
   "Luôn tỏa sáng, luôn hạnh phúc!",
-  "Sinh nhật thật vui vẻ nhé!"
+  "Sinh nhật vui vẻ nhé! iu Em"
 ];
 
 const typewriterContainer = document.getElementById("typewriter-container");
