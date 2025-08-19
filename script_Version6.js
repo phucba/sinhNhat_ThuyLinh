@@ -127,11 +127,7 @@ wishBtn.addEventListener('click', function() {
 
   // Cập nhật nội dung và style
   wishResult.innerHTML = "Chúc mừng sinh nhật! 🎉 Người bạn gái mà anh không ngờ tới nhất. Cảm ơn em đến bên anh! Chúng ta cùng cố gắng để về chung một nhà nhé! hihi";
-  wishResult.style.color = "#ff69b4"; // hồng đậm
-  wishResult.style.fontSize = "28px"; // chữ to hơn
-  wishResult.style.fontWeight = "bold";
-  wishResult.style.textShadow = "2px 2px 6px #ffb6c1"; // bóng hồng nhẹ
-  wishResult.style.transition = "all 0.5s"; // hiệu ứng mềm mại
+  wishResult.classList.add("pinkText");
 
   // Pháo hoa
   for (let i = 0; i < 6; i++) {
