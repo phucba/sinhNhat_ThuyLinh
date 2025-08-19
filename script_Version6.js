@@ -1,6 +1,6 @@
 // --- Lời chúc hiệu ứng typewriter ---
 const greetings = [
-  "Chúc mừng sinh nhật Thùy Linh!",
+  "Chúc mừng sinh nhật Thùy Linh!ハート ",
   "Chúc Em tuổi mới thật nhiều niềm vui, sức khỏe.",
   "Tuổi mới, mong mọi điều tốt đẹp sẽ đến <3.",
   "Luôn tỏa sáng, luôn hạnh phúc!",
