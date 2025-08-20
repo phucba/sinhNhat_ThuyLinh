@@ -126,7 +126,7 @@ wishBtn.addEventListener('click', function() {
   flame.style.display = "none";
 
   // Cập nhật nội dung và style
-  wishResult.innerHTML = "Chúc mừng sinh nhật! 🎉 Người có thể khiến anh có thể quay 360 độ. Cảm ơn em đến bên anh!Mình cùng nhau cố gắng để sớm về chung một nhà nhé! hihi";
+  wishResult.innerHTML = "Chúc mừng sinh nhật! 🎉 Người có thể khiến anh có thể quay 360 độ. Cảm ơn em đã đến bên anh!Mình cùng nhau cố gắng, để sớm về chung một nhà nhé! hihi";
   wishResult.classList.add("pinkText");
 
   // Pháo hoa
